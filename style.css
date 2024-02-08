@@ -1,0 +1,57 @@
+ul#css3menu1{
+	margin:0 0.2%;list-style:none;padding:6px 0.6% 6px 0%;background-color:#835d31;background-image:url("mainbk.png");background-repeat:repeat;border-width:1px;border-style:solid;border-color:#B4B4B4;-moz-border-radius:12px;-webkit-border-radius:12px;border-radius:12px;font-size:0;width:99%;z-index:999;position:relative;display:inline-block;zoom:1;
+	*display:inline;*padding-right:1.56%;}
+ul#css3menu1 li{
+	display:block;white-space:nowrap;font-size:0;float:left;}
+* html ul#css3menu1 li a{
+	display:inline-block;}
+ul#css3menu1>li{
+	margin:0 0% 0 0.6%;width:19%;}
+ul#css3menu1 li.toplast{
+	width:21%;}
+body:first-of-type ul#css3menu1{
+	display:inline-table;border-spacing:6px 0;}
+body:first-of-type ul#css3menu1>li{
+	display:table-cell;float:none;}
+ul#css3menu1 a:active, ul#css3menu1 a:focus{
+	outline-style:none;}
+ul#css3menu1 a{
+	display:block;vertical-align:middle;text-align:center;text-decoration:none;font:12px "Arial Black",Gadget,sans-serif;color:#e4c4ab;cursor:pointer;padding:8px 20px;background-color:;background-repeat:repeat;border-width:0;border-style:solid;border-color:transparent;}
+ul#css3menu1 li:hover>a,ul#css3menu1 li a.pressed{
+	background-color:#e4c4ab;border-color:#F8F8F8;border-style:solid;color:#835d31;text-decoration:none;}
+ul#css3menu1 > label.switch{
+	display:none;cursor:pointer;width:25px;height:20px;padding:8px 20px;}
+ul#css3menu1 > label.switch:before{
+	content:"";position:absolute;display:block;height:4px;width:25px;border-radius:4px;background:#e4c4ab;-moz-box-shadow:0 8px #e4c4ab, 0 16px #e4c4ab;-webkit-box-shadow:0 8px #e4c4ab, 0 16px #e4c4ab;box-shadow:0 8px #e4c4ab, 0 16px #e4c4ab;}
+ul#css3menu1 > label.switch:hover:before{
+	background:#835d31;-moz-box-shadow:0 8px #835d31, 0 16px #835d31;-webkit-box-shadow:0 8px #835d31, 0 16px #835d31;box-shadow:0 8px #835d31, 0 16px #835d31;}
+ul#css3menu1 > .switchbox{
+	display:none;}
+ul#css3menu1 li.topmenu>a{
+	background-color:;background-image:none;background-position:0 0;border-width:1px 0 0 0;border-style:solid;border-color:transparent;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;font:bold 13px Arial;color:#e4c4ab;text-decoration:none;text-shadow:0 1px 1px #000000;}
+ul#css3menu1 li.topmenu:hover>a,ul#css3menu1 li.topmenu a.pressed{
+	background-color:#e4c4ab;background-image:url("mainbk.png");background-position:0 100%;border-style:solid;border-color:#F8F8F8;color:#835d31;text-decoration:none;text-shadow:0 1px 0 #FFFFFF;}
+ul#css3menu1 li.toplast>a{
+	background-color:;background-image:none;background-position:0 0;border-width:1px 0 0 0;border-style:solid;border-color:transparent;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;font:bold 13px Arial;color:#e4c4ab;text-decoration:none;text-shadow:0 1px 1px #000000;}
+ul#css3menu1 li.toplast:hover>a,ul#css3menu1 li.toplast a.pressed{
+	background-color:#e4c4ab;background-image:url("mainbk.png");background-position:0 100%;border-style:solid;border-color:#F8F8F8;color:#835d31;text-decoration:none;text-shadow:0 1px 0 #FFFFFF;}
+ul#css3menu1>li:nth-of-type(1){width:21%}ul#css3menu1>li:nth-of-type(5){width:19%}
+@-moz-document url-prefix(){body:first-of-type ul#css3menu1{display:inline-block} body:first-of-type ul#css3menu1>li{display:block;float:left !important;}}
+@media only screen and (max-width:521px),only screen and (max-device-width:521px){
+ul#css3menu1>li:nth-of-type(1){width:35%;margin:0 0% 6px 1%;}ul#css3menu1>li:nth-of-type(2){width:31%;margin:0 0% 6px 1%;}ul#css3menu1>li:nth-of-type(3){width:31%;margin:0 0% 6px 1%;}ul#css3menu1>li:nth-of-type(4){width:49%;margin:0 0% 0 1%;}ul#css3menu1>li:nth-of-type(5){width:49%;margin:0 0% 0 1%;}body:first-of-type ul#css3menu1{display:inline-block} body:first-of-type ul#css3menu1>li{display:block;float:left !important;}}
+@media screen and (max-width: 768px) {
+	ul#css3menu1 > li {
+		position: initial;}
+	ul#css3menu1 ul .submenu,ul#css3menu1 li > ul {
+		left: 0; right:auto; top: 100%;}
+	ul#css3menu1 .submenu,ul#css3menu1 ul,ul#css3menu1 .column {
+		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding-right: 0;width: 100% !important;}
+}
+@media screen and (max-width: 317px) {
+	ul#css3menu1 {
+		width: 100%;}
+	ul#css3menu1 > li {
+		display: none !important;		position: relative;		width: 100% !important;}
+	ul#css3menu1 > label.switch,ul#css3menu1 .switchbox:checked ~ li {
+		display: block !important;}
+}

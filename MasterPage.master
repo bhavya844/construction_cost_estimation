@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link rel="stylesheet" href="style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+    <script src="includes/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <style>
+    .tabular
+    {
+    	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+  
+
+    	}
+    	.ATMtabular
+    {
+    	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+  background-image:url(images/ATM.jpg); 
+  height:300;
+
+    	}
+    	.intabular
+    {
+    	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+   background-color:White;
+    }
+    .sidebar
+    {
+    	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+  background-color:White;
+    }
+    </style>
+    
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    
+    <div>
+    <center>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+    <table class="tabular" width="80%">
+    
+    <tr>
+    <td colspan="2">
+        <img src="images/banner.jpg" width="100%" class="intabular"/>
+    </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2">
+    <asp:Panel ID="Panel1" runat="server">
+        <ul id="css3menu1" class="topmenu">
+            <input type="checkbox" id="css3menu-switcher" class="switchbox"><label onclick="" class="switch" for="css3menu-switcher"></label>	
+            <li class="topmenu"><a href="Rate.aspx" style="height:16px;line-height:16px;">Update Rates</a></li>
+	        <li class="topmenu"><a href="Create.aspx" style="height:16px;line-height:16px;">New Estimation</a></li>
+	        <li class="topmenu"><a href="View Rates.aspx" style="height:16px;line-height:16px;">View Rates</a></li>
+            <li class="topmenu"><a href="Report.aspx" style="height:16px;line-height:16px;">Reports</a></li>
+	        <li class="toplast"><a href="Logout.aspx" style="height:16px;line-height:16px;">Logout</a></li>
+        </ul>
+    </asp:Panel>
+
+    <asp:Panel ID="Panel2" runat="server">
+        <ul id="css3menu1" class="topmenu">
+            <input type="checkbox" id="Checkbox1" class="switchbox"><label onclick="" class="switch" for="css3menu-switcher"></label>	
+            <li class="topmenu"><a href="DocApp.aspx" style="height:16px;line-height:16px;">My Appiontments</a></li>
+	        <li class="topmenu"><a href="ViewUser.aspx" style="height:16px;line-height:16px;">View Coustomer</a></li>
+	        <li class="topmenu"><a href="AddT.aspx" style="height:16px;line-height:16px;">Add Description</a></li>
+	        <li class="topmenu"><a href="DocDetail.aspx" style="height:16px;line-height:16px;">My Details</a></li>
+            <li class="toplast"><a href="Logout.aspx" style="height:16px;line-height:16px;">Logout</a></li>
+        </ul>
+    </asp:Panel>
+
+    <asp:Panel ID="Panel3" runat="server">
+        <ul id="css3menu1" class="topmenu">
+            <input type="checkbox" id="Checkbox2" class="switchbox"><label onclick="" class="switch" for="css3menu-switcher"></label>	
+            <li class="topmenu"><a href="My.aspx" style="height:16px;line-height:16px;">My Details</a></li>
+	        <li class="topmenu"><a href="Book.aspx" style="height:16px;line-height:16px;">Book Appiontment</a></li>
+	        <li class="topmenu"><a href="Cancel.aspx" style="height:16px;line-height:16px;">Cancel Appiontment</a></li>
+            <li class="topmenu"><a href="ViewBooking.aspx" style="height:16px;line-height:16px;">View Bookings</a></li>
+            <li class="topmenu"><a href="SearchD.aspx" style="height:16px;line-height:16px;">Search Doctor</a></li>
+            <li class="topmenu"><a href="GFeedback.aspx" style="height:16px;line-height:16px;">Feedback</a></li>
+            <li class="toplast"><a href="Logout.aspx" style="height:16px;line-height:16px;">Logout</a></li>
+        </ul>
+    </asp:Panel>
+    </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2" class="intabular"> <center><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </center>
+        </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2">
+       
+        </td>
+        </tr>
+        
+        <tr>
+        <td colspan="2"></td>
+        </tr>
+    <tr>
+    <td colspan="2" 
+            style="background-color: #996633; color: #e4c4ab; font-size: large;">
+        Construction Estimator 2015</td>
+    </tr>
+        </table>
+    </center>
+    </div>
+    
+    </form>
+    
+</body>
+</html>
